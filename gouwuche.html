@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<!--<div class="vimg zhuangTai">
+				<p><img src="img/zhuangtailan.png"/></p>
+			</div>-->
+			<div class="header">
+				<div class="aa">
+					<div>
+						<p>
+							<a href="#" onClick="javascript :history.back(-1);">
+								<img src="img/zuojiantou.png" border="0" title="返回上一页">
+							</a>
+						</p>
+					</div>
+					<div>
+						<p><b>美食购物车</b></p>
+					</div>
+					<div>
+						<p>编辑</p>
+					</div>
+				</div>
+			</div>
+			<div class="shangpin">
+				<ul>
+					<p>
+						<input type="checkbox" name="" id="allipts3" value="" class="xuan"/>
+						<b>百果园</b>
+					</p>
+					<li>
+						<input type="checkbox" name="" id="allipts" value="" class="xuan"/>
+						<img src="img/IMGyi.png"/>
+						<div class="zi">
+							<p><b>百果园 PAGODA[1KG] ...</b></p>
+							<p>[1KG]A级-三红蜜柚（中）超重...</p>
+							<p>周一至周日，免预约</p>
+							<div><b>￥<span id="dan">8.9</span></b><span class="yi">￥19.9</span><span class="er">4.47折</span>
+								<p>
+									<button class="jian">-</button>
+									<b id="span">1</b>
+									<button class="jia">+</button>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" name="" id="allipts1" value="" class="xuan"/>
+						<img src="img/IMGer.png"/>
+						<div class="zi">
+							<p><b>百果园 PAGODA[1KG] ...</b></p>
+							<p>[1KG]A级-三红蜜柚（中）超重...</p>
+							<p>周一至周日，免预约</p>
+							<div><b>￥<span id="dan1">8.9</span></b><span class="yi">￥19.9</span><span class="er">4.47折</span>
+								<p>
+									<button class="jian1">-</button>
+									<b id="span1">1</b>
+									<button class="jia1">+</button>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<input type="checkbox" name="" id="allipts2" value="" class="xuan"/>
+						<img src="img/IMGsan.png"/>
+						<div class="zi">
+							<p><b>百果园 PAGODA[1KG] ...</b></p>
+							<p>[1KG]A级-三红蜜柚（中）超重...</p>
+							<p>周一至周日，免预约</p>
+							<div><b>￥<span id="dan2">8.9</span></b><span class="yi">￥19.9</span><span class="er">4.47折</span>
+								<p>
+									<button class="jian2">-</button>
+									<b id="span2">1</b>
+									<button class="jia2">+</button>
+								</p>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="jiesuan">
+				<ul>
+					<li><input type="checkbox" name="" id="Qxuan" value="" class="xuan"/>&nbsp;&nbsp;全选</li>
+					<li>
+						<span>合计</span>
+						<span>￥<b class="zong">26.7</b></span>
+						<button class="heji">结算(<b>2</b>)</button>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//返回上一页箭头
+		function go(){
+			window.history.go(-1);
+		}
+		Zepto(function () {
+			$('#Qxuan').click(function  () {
+				if($('#Qxuan').prop('checked')){
+					$('#allipts').prop("checked",true);
+					$('#allipts1').prop("checked",true);
+					$('#allipts2').prop("checked",true);
+					$('#allipts3').prop("checked",true);
+				}else{
+					$('#allipts').prop("checked",false);
+					$('#allipts1').prop("checked",false);
+					$('#allipts2').prop("checked",false);
+					$('#allipts3').prop("checked",false);
+				}
+			})
+			$('.jian').click(function () {
+				var $num=$('#span').html();
+				$span=parseInt($num);
+				if ($('#span').html() == 1) {
+	                alert('不能再减了，再减就没了！');
+	                return;
+	            } else{
+	                $('#span').html($span-1);
+	                
+	            }
+			})
+			$('.jia').click(function  () {
+				var $num1=$('#span').html();
+				$span=parseInt($num1);
+				$('#span').html($span+1);
+			})
+			$('.jian1').click(function () {
+				var $num=$('#span1').html();
+				$span=parseInt($num);
+				if ($('#span1').html() == 1) {
+	                alert('不能再减了，再减就没了！');
+	                return;
+	            } else{
+	                $('#span1').html($span-1);
+	                
+	            }
+			})
+			$('.jia1').click(function  () {
+				var $num1=$('#span1').html();
+				$span=parseInt($num1);
+				$('#span1').html($span+1);
+			})
+			$('.jian2').click(function () {
+				var $num=$('#span2').html();
+				$span=parseInt($num);
+				if ($('#span2').html() == 1) {
+	                alert('不能再减了，再减就没了！');
+	                return;
+	            } else{
+	                $('#span2').html($span-1);
+	                
+	            }
+			})
+			$('.jia2').click(function  () {
+				var $num1=$('#span2').html();
+				$span=parseInt($num1);
+				$('#span2').html($span+1);
+			})
+			$('.heji').click(function  () {
+				var zong=Number($('#dan').html()*$('#span').html()+$('#dan1').html()*$('#span1').html()+$('#dan2').html()*$('#span2').html()).toFixed(2);
+				$('.zong').html(zong);
+			})
+			
+		})
+	</script>
+</html>

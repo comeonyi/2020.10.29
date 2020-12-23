@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shangpinxiangqing.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<!--<div class="vimg zhuangTai">
+				<p><img src="img/zhuangtailan.png"/></p>
+			</div>-->
+			<div class="toubu">
+				<p>
+					<a href="#" onClick="javascript :history.back(-1);">
+						<img src="img/zuocejiantou.png" border="0" title="返回上一页">
+					</a></p>
+				<p><b>商品详情</b></p>
+			</div>
+			<!--轮播图-->
+			<div class="swiper-container">
+	    		<div class="swiper-wrapper">
+	      			<div class="swiper-slide"><img src="img/xiangjiao.png"/></div> 
+				    <div class="swiper-slide"><img src="img/xiangjiao.png"/></div>
+				    <div class="swiper-slide"><img src="img/xiangjiao.png"/></div>
+	    		</div>
+	    	<!-- Add Pagination -->
+	    		<div class="swiper-pagination"></div>
+	 	 	</div>
+	 	 	<div class="wenzi">
+	 	 		<p><b>正宗山东烟台红富士、红富士、嘎啦、桑萨、红将军、金冠</b></p>
+	 	 		<p><b>￥66.00</b><span>￥120.00</span><img src="img/tuceng.png"/></p>
+	 	 		<p>红富士是从普通富士的芽（枝）变种选育出的着色西富士的统称。富士苹果是日本农林水产省果树实验场盛冈分场于</p>
+	 	 	</div>
+	 	 	<!--底部导航-->
+	 	 	<div class="didaohang">
+	 	 		<div class="zuo">
+	 	 			<ul>
+	 	 				<li>
+	 	 					<p><img src="img/kefu.png"/></p>
+	 	 					<p>客服</p>
+	 	 				</li>
+	 	 				<li>
+	 	 					<p><img src="img/gouwuche.png"/></p>
+	 	 					<p>
+	 	 						<a href="gouwuche.html">购物车</a></p>
+	 	 				</li>
+	 	 			</ul>
+	 	 		</div>
+	 	 		<div class="you">
+	 	 			<ul>
+	 	 				<li><span>加入购物车</span><span>立即购买</span></li>
+	 	 			</ul>
+	 	 		</div>
+	 	 	</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function go(){
+			window.history.go(-1);
+		}
+		//		轮播图
+		var swiper = new Swiper('.swiper-container', {
+     		//循环
+     		loop : true,
+     		pagination: {
+        		el: '.swiper-pagination',
+        		dynamicBullets: true,
+      		},
+      		autoplay: {
+    			delay: 1000,//1秒切换一次
+    			disableOnInteraction: false,
+			},
+    	});
+	</script>
+</html>

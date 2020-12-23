@@ -1,0 +1,161 @@
+.box{
+	width: 100%;
+	height: 100%;
+	font-size: 0.14rem;
+	background: #f8f8f8;
+}
+.zhuangTai{
+	/*background: white;*/
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.zhuangTai>p{
+	width: 96%;
+	margin: 0 auto;
+	font-size:0.1rem;
+}
+.zhuangTai>img{
+	width: 100%;
+	padding: 0.05rem 0.2rem 0 0.2rem;
+}
+.header{
+	width: 100%;
+	/*height: 0.42rem;*/
+	/*background: white;*/
+	position: fixed;
+	font-size: 0.18rem;
+	padding-bottom: 0.2rem;
+	z-index: 999;
+	top: 0.3rem;
+	/*margin-bottom: 0.1rem;*/
+}
+.header>.aa{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.header>.aa>div>p>a{
+	width: 100%;
+	margin-left: 0.15rem;
+}
+.header>.aa>div>p>a>img{
+	width: 35%;
+}
+.header>.aa>div>p:nth-child(2){
+	font-size: 0.18rem;
+	padding-top: 0.025rem;
+}
+.header>.aa>div:nth-child(3)>p{
+	font-size: 0.14rem;
+	margin-top: 0.025rem;
+	margin-right: 0.2rem;
+}
+.shangpin{
+	width: 100%;
+	margin-top: 0.73rem;
+}
+.shangpin>ul{
+	width: 94%;
+	margin: 0 auto;
+	background: white;
+	border-radius: 0.05rem;
+}
+.shangpin>ul>p{
+	margin-left: 3%;
+	/*line-height: 0.2rem;*/
+}
+.shangpin>ul>p>b{
+	margin-left: 3%;
+}
+.xuan{
+	width: 0.2rem;
+	height: 0.2rem;
+	margin-right: 0.1rem;
+	border-radius: 100%;
+}
+.shangpin>ul{
+	margin-bottom: 0.1rem;
+}
+.shangpin>ul>li{
+	display: flex;
+	padding: 0.15rem 0.1rem;
+}
+.shangpin>ul>li>input{
+	margin-top: 0.3rem;
+}
+.shangpin>ul>li>img{
+	width: 25%;
+}
+.shangpin>ul>li>.zi{
+	width: 65%;
+	margin-left: 0.1rem;
+	font-size: 0.14rem;
+}
+.shangpin>ul>li>.zi>p:nth-child(1){
+	font-size: 0.14rem;
+}
+.shangpin>ul>li>.zi>div{
+	display: flex;
+	width: 100%;
+}
+.shangpin>ul>li>.zi>div>b{
+	color: red;
+	font-size: 0.14rem;
+}
+.shangpin>ul>li>.zi>div>.yi{
+	text-decoration: line-through;
+	font-size: 0.12rem;
+	padding: 0 0.04rem;
+	color: #B6B6B6;
+}
+.shangpin>ul>li>.zi>div>.er{
+	background: pink;
+	border-radius: 0.12rem;
+	font-size: 0.1rem;
+	padding: 0.01rem 0.05rem;
+	color: red;
+}
+.shangpin>ul>li>.zi>div>p{
+	/*float: right;*/
+	margin-left: 0.1rem;
+	border-radius: 0.5rem;
+}
+.shangpin>ul>li>.zi>div>p>b{
+	padding: 0 0.05rem;
+	border: 0.01rem solid #B6B6B6;
+}
+.shangpin>ul>li>.zi>div>p>button{
+	padding: 0 0.03rem;
+}
+/*结算*/
+.jiesuan{
+	width: 90%;
+	position: fixed;
+	bottom: 0;
+	background: white;
+	left: 5%;
+	/*margin: 0 auto;*/
+}
+.jiesuan>ul{
+	display: flex;
+	font-size: 0.08rem;
+	justify-content: space-between;
+}
+.jiesuan>ul>li:nth-child(1){
+	margin-top: 0.1rem;
+}
+.jiesuan>ul>li>span:nth-child(2){
+	font-size: 0.16rem;
+	color: orangered;
+}
+.jiesuan>ul>li>button:nth-child(3){
+	font-size: 0.16rem;
+	border: 0;
+	padding: 0.15rem 0.25rem;
+	background: orangered;
+	border-radius: 0.5rem;
+	color: white;
+}

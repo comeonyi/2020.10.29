@@ -1,0 +1,102 @@
+.dabox{
+	width: 100%;
+	font-size: 0.14rem;
+	height: 100%;
+	background: #EEEEEE;
+}
+.box{
+	width: 100%;
+	height: 40%;
+	background: url(../img/kafei.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/*头部*/
+.toubu{
+	width: 100%;
+	padding: 0.1rem 0 0.05rem 0;
+}
+.toubu>.wai>p:nth-child(2){
+	padding: 0 0 0 8%;
+}
+.toubu>.wai{
+	color: white;
+	width: 94%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.toubu>.wai>p>a>img{
+	width: 50%;
+}
+.zi{
+	padding: 0.3rem 0.25rem;
+	color: white;
+}
+.zi>.two{
+	font-size: 0.3rem;
+}
+.zi>.one{
+	font-size: 0.18rem;
+	margin-bottom: 0.1rem;
+}
+.zi>.three>span{
+	border-radius: 0.15rem;
+	background: #9447d1;
+	padding: 0.05rem 0.1rem;
+}
+.quan{
+	width: 100%;
+}
+.quan>ul{
+	width: 94%;
+	margin: 0 auto;
+}
+.quan>ul>li{
+	border-radius: 0.1rem;
+	background: white;
+	padding: 0 0.1rem 0.15rem 0.1rem;
+	margin-top: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.quan>ul>li>.zuo{
+	width: 20%;
+	color: red;
+	text-align: center;
+	background: #fff7fa;
+}
+.quan>ul>li>.zuo>p:nth-child(1){
+	padding: 0.2rem 0 0 0;
+	font-size: 0.18rem;
+}
+.quan>ul>li>.you{
+	width: 75%;
+}
+.quan>ul>li>.you>p{
+	padding: 0.1rem 0 0 0;
+}
+.quan>ul>li>.you>.one>span{
+	font-size: 0.1rem;
+	color: white;
+	background: red;
+	padding: 0.02rem;
+}
+.quan>ul>li>.you>.two{
+	font-size: 0.1rem;
+	color: #B6B6B6;
+}
+.quan>ul>li>.you>.three>span{
+	font-size: 0.1rem;
+	border: 0.01rem solid red;
+	border-radius: 0.03rem;
+	padding: 0.02rem 0.03rem;
+	color: red;
+}
+.quan>ul>li>.you>.three>b{
+	color: white;
+	padding: 0.1rem;
+	float: right;
+	background: red;
+	border-radius: 0.2rem;
+}
